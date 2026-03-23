@@ -14,7 +14,7 @@ const Hero = () => {
 
       <div className={styles.content}>
         <div className={styles.profileWrap}>
-          <img src="/profile.png" alt="Renalyn G. Giray — Profile" className={styles.profileImg} />
+          <img src="/profile.jpeg" alt="Renalyn G. Giray — Profile" className={styles.profileImg} />
         </div>
         <h1 className={styles.name}>RENALYN GALZOTE GIRAY</h1>
         <p className={styles.subtitle}>Frontend Developer &amp; UI/UX Designer</p>

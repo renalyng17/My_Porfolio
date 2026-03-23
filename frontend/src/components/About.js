@@ -15,7 +15,7 @@ const About = () => (
       <span className={styles.sectionNum} aria-hidden="true">01</span>
       <div className={styles.grid}>
         <div className={styles.imageWrap}>
-          <img src="/profile.png" alt="Renalyn Galzote Giray — About" className={styles.image} />
+          <img src="/profile.jpeg" alt="Renalyn Galzote Giray — About" className={styles.image} />
         </div>
 
         <div className={styles.content}>
