@@ -21,7 +21,7 @@ const projects = [
   {
     num: '02',
     title: 'ACCEL-O-ROT',
-    tech: ['IoT', 'React', 'Firebase', 'Sensors'],
+    tech: ['IoT', 'Flutter', 'Firebase', 'Sensors'],
     desc: `Traditional composting methods often face issues like slow decomposition and inadequate environmental control. The Accel-O-Rot project addresses these challenges by introducing an integrated smart composting platform, which accelerates organic waste decomposition into compost within 14 days. This system utilizes IoT-enabled sensors for real-time monitoring of critical factors such as air quality, moisture, and temperature, allowing for automated adjustments to maintain optimal conditions. The Accel-O-Rot improves processing efficiency, reduces labor requirements, minimizes odor, and ensures compliance with standards, making it a suitable solution for community-level waste management.`,
     github: null,
     live: 'https://accel-o-rot.web.app/',

@@ -41,14 +41,7 @@ const About = () => (
             </div>
           </div>
 
-          <a
-            href="/cv.pdf"
-            download
-            className={styles.cvBtn}
-            aria-label="Download my CV"
-          >
-            Download CV
-          </a>
+              
         </div>
       </div>
     </div>
