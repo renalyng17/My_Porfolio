@@ -58,8 +58,8 @@
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 44px rgba(232, 69, 69, 0.14);
-  border-color: rgba(232, 69, 69, 0.5);
+  box-shadow: 0 16px 44px rgba(255, 143, 183, 0.14);
+  border-color: rgba(255, 143, 183, 0.5);
 }
 
 .card:hover::before {
@@ -90,7 +90,7 @@
 .card:hover .iconBox {
   background: var(--accent);
   color: #fff;
-  box-shadow: 0 4px 16px rgba(232, 69, 69, 0.4);
+  box-shadow: 0 4px 16px rgba(255, 143, 183, 0.4);
 }
 
 .cardTitle {

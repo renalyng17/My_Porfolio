@@ -63,8 +63,8 @@
 }
 
 .card:hover {
-  border-color: rgba(232, 69, 69, 0.5);
-  box-shadow: 0 10px 40px rgba(232, 69, 69, 0.1);
+  border-color: rgba(255, 143, 183, 0.5);
+  box-shadow: 0 10px 40px rgba(255, 143, 183, 0.1);
   transform: translateY(-4px);
 }
 
@@ -75,7 +75,7 @@
 .projNum {
   font-size: 3.8rem;
   font-weight: 800;
-  color: rgba(232, 69, 69, 0.13);
+  color: rgba(255, 143, 183, 0.13);
   line-height: 1;
   padding-top: 4px;
 }
@@ -103,7 +103,7 @@
   font-size: 0.72rem;
   font-weight: 600;
   color: var(--accent);
-  background: rgba(232, 69, 69, 0.08);
+  background: rgba(255, 143, 183, 0.08);
   border: 1px solid var(--border-accent);
   padding: 3px 12px;
   border-radius: 20px;

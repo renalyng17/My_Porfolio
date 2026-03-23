@@ -4,12 +4,12 @@
   --bg-primary: #1a1d2e;
   --bg-secondary: #1e2235;
   --bg-card: #252a3d;
-  --accent: #e84545;
-  --accent-hover: #c73737;
+  --accent: #FF8FB7;
+  --accent-hover: #e678a3;
   --text-primary: #ffffff;
   --text-secondary: #b0b3c7;
   --text-muted: #6b7280;
-  --border-accent: rgba(232, 69, 69, 0.28);
+  --border-accent: rgba(255, 143, 183, 0.28);
   --section-num: rgba(82, 95, 175, 0.1);
   --font-family: 'Poppins', sans-serif;
   --transition: 0.3s ease;

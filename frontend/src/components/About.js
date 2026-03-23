@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './About.module.css';
 
 const infoItems = [
-  { label: 'Name', value: 'Renalyn G. Giray' },
+  { label: 'Name', value: 'Renalyn Galzote Giray' },
   { label: 'Age', value: '23' },
   { label: 'Phone', value: '+63 915 756 2650' },
   { label: 'Address', value: 'Caloocan City, Philippines' },
@@ -15,7 +15,7 @@ const About = () => (
       <span className={styles.sectionNum} aria-hidden="true">01</span>
       <div className={styles.grid}>
         <div className={styles.imageWrap}>
-          <img src="/profile.png" alt="Renalyn G. Giray — About" className={styles.image} />
+          <img src="/profile.png" alt="Renalyn Galzote Giray — About" className={styles.image} />
         </div>
 
         <div className={styles.content}>

@@ -4,10 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg-primary)
-    url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1920&q=80')
-    center / cover no-repeat;
-  background-attachment: fixed;
+  background: var(--bg-primary);
   overflow: hidden;
 }
 
@@ -37,12 +34,12 @@
   overflow: hidden;
   margin: 0 auto 32px;
   border: 3px solid var(--accent);
-  box-shadow: 0 0 0 6px rgba(232, 69, 69, 0.18), 0 0 40px rgba(232, 69, 69, 0.3);
+  box-shadow: 0 0 0 6px rgba(255, 143, 183, 0.18), 0 0 40px rgba(255, 143, 183, 0.3);
   transition: box-shadow var(--transition);
 }
 
 .profileWrap:hover {
-  box-shadow: 0 0 0 8px rgba(232, 69, 69, 0.22), 0 0 60px rgba(232, 69, 69, 0.4);
+  box-shadow: 0 0 0 8px rgba(255, 143, 183, 0.22), 0 0 60px rgba(255, 143, 183, 0.4);
 }
 
 .profileImg {
@@ -125,10 +122,6 @@
 }
 
 @media (max-width: 768px) {
-  .hero {
-    background-attachment: scroll;
-  }
-
   .scrollDown {
     left: 20px;
     bottom: 24px;

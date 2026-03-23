@@ -69,21 +69,25 @@
 
 .infoBox {
   width: 100%;
-  max-width: 100%;       /* allow full container width */
-  padding: 1rem;
-  border: 1px solid var(--border-accent);
-  border-radius: 6px;
+  max-width: 100%;
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 143, 183, 0.45);
+  border-radius: 4px;
   box-sizing: border-box;
   margin-bottom: 32px;
-  background: rgba(232, 69, 69, 0.03);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01)),
+    rgba(18, 20, 36, 0.92);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03),
+    0 12px 28px rgba(0, 0, 0, 0.2);
 }
 
 .infoGrid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr)); /* all 5 items in one line */
-  gap: 0.75rem 1rem;     /* adjust spacing */
-  align-items: center;
-  justify-content: stretch;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 32px;
+  align-items: start;
 }
 
 .infoItem {
@@ -92,18 +96,20 @@
   gap: 6px;
   font-size: 0.88rem;
   flex-wrap: wrap;
+  min-width: 0;
 }
 
 .infoLabel {
   font-weight: 700;
-  color: var(--text-primary);
+  color: rgba(255, 255, 255, 0.92);
   white-space: nowrap;
   flex-shrink: 0;
 }
 
 .infoValue {
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.68);
   word-break: break-word;
+  min-width: 0;
 }
 
 .cvBtn {
@@ -122,7 +128,7 @@
 .cvBtn:hover {
   background: var(--accent-hover);
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(232, 69, 69, 0.35);
+  box-shadow: 0 6px 20px rgba(255, 143, 183, 0.35);
 }
 
 @media (max-width: 900px) {
@@ -137,5 +143,6 @@
 
   .infoGrid {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
 }

@@ -48,7 +48,8 @@ const Navbar = () => {
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`} role="navigation" aria-label="Main navigation">
       <div className={styles.inner}>
         <a href="#home" className={styles.logo} onClick={() => handleLinkClick('home')}>
-          <span className={styles.logoAccent}>R</span>enalyn
+          <span className={styles.logoMark} aria-hidden="true">R</span>
+          <span className={styles.logoText}>Renalyn&apos;s Portfolio</span>
         </a>
 
         <ul className={`${styles.links} ${menuOpen ? styles.open : ''}`}>
