@@ -1,0 +1,29 @@
+{
+  "name": "my_portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio website with React and Node.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd frontend && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renalyng17/My_Porfolio.git"
+  },
+  "keywords": ["portfolio", "react", "nodejs", "fullstack"],
+  "author": "Renalyn G",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/renalyng17/My_Porfolio/issues"
+  },
+  "homepage": "https://github.com/renalyng17/My_Porfolio#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
