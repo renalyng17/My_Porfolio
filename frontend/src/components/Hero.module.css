@@ -1,0 +1,141 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary)
+    url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1920&q=80')
+    center / cover no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(14, 16, 28, 0.7) 0%,
+    rgba(14, 16, 28, 0.78) 60%,
+    rgba(26, 29, 46, 0.9) 100%
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 24px;
+  animation: fadeUp 0.9s ease both;
+}
+
+.profileWrap {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 32px;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 0 6px rgba(232, 69, 69, 0.18), 0 0 40px rgba(232, 69, 69, 0.3);
+  transition: box-shadow var(--transition);
+}
+
+.profileWrap:hover {
+  box-shadow: 0 0 0 8px rgba(232, 69, 69, 0.22), 0 0 60px rgba(232, 69, 69, 0.4);
+}
+
+.profileImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.name {
+  font-size: clamp(1.8rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: clamp(2px, 0.5vw, 5px);
+  margin-bottom: 16px;
+  line-height: 1.15;
+}
+
+.subtitle {
+  font-size: clamp(0.9rem, 1.8vw, 1.15rem);
+  font-weight: 400;
+  color: var(--text-primary);
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.scrollDown {
+  position: absolute;
+  bottom: 40px;
+  left: 44px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-family: var(--font-family);
+  font-size: 0.78rem;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  z-index: 1;
+  transition: color var(--transition);
+}
+
+.scrollDown:hover {
+  color: var(--accent);
+}
+
+.scrollLine {
+  display: block;
+  width: 52px;
+  height: 1px;
+  background: currentColor;
+  flex-shrink: 0;
+}
+
+.scrollText {
+  text-transform: uppercase;
+}
+
+.scrollIcon {
+  animation: bounce 1.8s ease infinite;
+}
+
+/* ── Animations ── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(6px); }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-attachment: scroll;
+  }
+
+  .scrollDown {
+    left: 20px;
+    bottom: 24px;
+  }
+
+  .profileWrap {
+    width: 130px;
+    height: 130px;
+  }
+}

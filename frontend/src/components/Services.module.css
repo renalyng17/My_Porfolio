@@ -1,0 +1,133 @@
+.services {
+  background: var(--bg-primary);
+  padding: 110px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 28px;
+  position: relative;
+}
+
+.sectionNum {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  font-size: clamp(5rem, 10vw, 9rem);
+  font-weight: 800;
+  color: var(--section-num);
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  letter-spacing: -4px;
+}
+
+.header {
+  margin-bottom: 56px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.card {
+  border: 1px solid var(--border-accent);
+  border-radius: 8px;
+  padding: 40px 28px 36px;
+  background: var(--bg-card);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 44px rgba(232, 69, 69, 0.14);
+  border-color: rgba(232, 69, 69, 0.5);
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.iconWrap {
+  margin-bottom: 24px;
+}
+
+.iconBox {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--accent);
+  color: var(--accent);
+  transform: rotate(45deg);
+  border-radius: 4px;
+  transition: background var(--transition), color var(--transition), box-shadow var(--transition);
+}
+
+.iconBox > * {
+  transform: rotate(-45deg);
+}
+
+.card:hover .iconBox {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(232, 69, 69, 0.4);
+}
+
+.cardTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.cardUnderline {
+  width: 36px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+  margin-bottom: 14px;
+  transition: width var(--transition);
+}
+
+.card:hover .cardUnderline {
+  width: 56px;
+}
+
+.cardDesc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    max-width: 100%;
+  }
+}
